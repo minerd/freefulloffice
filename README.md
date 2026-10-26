@@ -1,24 +1,29 @@
-# Exxe Office — sürümler
+# Freefull Office: release files
 
-Exxe Office, Microsoft Office kurulu olmadan Word (`.docx`), Excel (`.xlsx`, `.csv`) ve
-PowerPoint (`.pptx`) dosyalarını düzenleyen, PDF dosyalarını görüntüleyen Türkçe bir
-masaüstü uygulamasıdır.
+Freefull Office opens and edits Word (`.docx`), Excel (`.xlsx`, `.csv`) and PowerPoint (`.pptx`)
+files, fills in and signs PDFs, and edits plain text, without Microsoft Office. It runs on
+Windows and macOS.
 
-Bu depo yalnızca **kurulum dosyalarını** barındırır; uygulamanın kaynak kodu burada yoktur.
+**Download page: <https://freefullsoft.com/products/freefull-office>**
 
-## İndirme
+This repository only holds the release files that the app's built-in updater reads. The source
+code is not here; the "Source code" archives under each release are added by GitHub
+automatically and contain nothing but this file.
 
-Son sürüm: **[Sürümler sayfası](../../releases/latest)**
+## Files in a release
 
-- **Kurulum** — `Exxe-Office-Setup-<sürüm>.exe`: masaüstü ve başlat menüsü kısayolu
-  oluşturur, belge uzantılarını uygulamayla ilişkilendirir.
-- **Taşınabilir** — `ExxeOffice-Portable-<sürüm>.exe`: kurulum gerektirmez, tek dosya.
+- `Freefull-Office-Setup-<version>.exe`: Windows installer (64-bit). Adds Start menu and desktop
+  shortcuts and can open `.docx`, `.xlsx`, `.pptx`, `.pdf`, `.csv` and `.txt` files.
+- `FreefullOffice-Portable-<version>.exe`: Windows, single file, no installation.
+- `Freefull-Office-<version>-universal.dmg`: macOS 12 or newer, Apple silicon and Intel.
+  Signed with a Developer ID and notarized by Apple.
+- `latest.yml`, `latest-mac.yml`, the `.zip` and the `.blockmap` files are read by the updater.
 
-Kurulu uygulama açılışta yeni sürümü kendisi denetler, arka planda indirir ve kurmadan
-önce size sorar.
+The installed app checks for a new version, downloads it in the background and asks before
+installing it.
 
-> Uygulama dijital sertifikayla imzalanmadığı için Windows SmartScreen ilk çalıştırmada
-> uyarı gösterebilir: **Ek bilgi → Yine de çalıştır**.
+The Windows installer is not code-signed yet, so SmartScreen may show "Windows protected your
+PC" the first time: choose **More info**, then **Run anyway**.
 
-Sürümlerin altındaki "Source code" arşivleri GitHub tarafından otomatik eklenir ve
-yalnızca bu açıklama dosyasını içerir.
+Freefull Office is independent software and is not affiliated with Microsoft. Word, Excel,
+PowerPoint and Microsoft Office are trademarks of Microsoft Corporation.
