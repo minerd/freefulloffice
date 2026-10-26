@@ -4,7 +4,7 @@ Freefull Office opens and edits Word (`.docx`), Excel (`.xlsx`, `.csv`) and Powe
 files, fills in and signs PDFs, and edits plain text, without Microsoft Office. It runs on
 Windows and macOS.
 
-**Download page: <https://freefullsoft.com/products/freefull-office>**
+**Download page: <https://freefullsoft.com/download/freefull-office>**
 
 This repository only holds the release files that the app's built-in updater reads. The source
 code is not here; the "Source code" archives under each release are added by GitHub
